@@ -13,3 +13,5 @@ com.example.sort : 排序算法的包路径
 	1.5	基数排序
 2. 外部排序
 
+com.example.search : 查找算法
+
