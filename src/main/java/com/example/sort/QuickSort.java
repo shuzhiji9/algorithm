@@ -36,8 +36,10 @@ public class QuickSort {
 				low++;
 			}
 			datas[high] = datas[low]; // 比中轴大的记录移到高端
+			DataUtils.printIntArr(datas);
 		}
 		datas[low] = tmp; //中轴记录到尾
+		DataUtils.printIntArr(datas);
 		return low;
 	}
 	

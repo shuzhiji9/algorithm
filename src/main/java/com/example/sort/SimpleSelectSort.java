@@ -26,6 +26,7 @@ public class SimpleSelectSort {
 			}
 			datas[position] = datas[i];
 			datas[i] = temp;
+			DataUtils.printIntArr(datas);
 		}
 	}
 	
