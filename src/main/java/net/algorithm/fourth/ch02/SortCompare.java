@@ -1,5 +1,6 @@
 package net.algorithm.fourth.ch02;
 
+import com.algs4.stdlib.StdRandom;
 import com.algs4.stdlib.Stopwatch;
 
 public class SortCompare {
@@ -30,6 +31,11 @@ public class SortCompare {
 		double total = 0.0;
 		Double [] a  = new Double[N];
 		for (int t = 0; t < T; t++) {
+			// 进行一次测试(生成一个数组并排序)
+			for(int i = 0;i < N;i++){
+				a[i] = StdRandom.uniform();
+			}
+			total += time(alg,a);
 		}
 		return total;
 	}
